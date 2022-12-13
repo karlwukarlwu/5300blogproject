@@ -1,0 +1,47 @@
+api 部分用到的命令
+cd ../api
+进入api 
+npm init -y
+初始化api 这一步生成package.json json 的运行开始部分需要index.js 需要手动创建
+yarn add express mysql nodemon
+安装MySQL接口
+
+实际上传入的文件是传到云端 然后在MySQL里面存入图片的云端地址
+
+二、import…与import{}
+
+通过上述几种常用引入方式我们可以了解到，这两种书写方式的区别，可以通俗的理解为整体与局部；
+将文件作为一个整体引入则是使用：import xxx from ‘路径’
+引入文件的一部分或某些部分的时候会使用带{}的方式：import { xxx } from ‘路径’
+————————————————
+版权声明：本文为CSDN博主「@Arielle。」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。
+原文链接：https://blog.csdn.net/qiqibei666/article/details/103413080
+
+PS C:\Users\23584\Desktop\blog2\api> yarn add bcryptjs
+用这个代码 加密用户传入的密码
+
+PS C:\Users\23584\Desktop\blog2\client> yarn axios
+前端后端通信 前端需要的库
+
+"proxy":"http://localhost:8800/api/"
+在client的package里写这行 防止我们不断地写这个ip 
+  await axios.post("/auth/login",inputs) 管的是这里的ip跳转 
+
+   navigate("/")还是跳转原来的3000  import {Link,useNavigate} from 'react-router-dom';  nav是useNav
+
+
+
+ await axios.post("/auth/register",inputs)
+            // 这一步是将input 交给后端 前后端交互
+
+后端引入JWT 不然不安全 没有jwp可以通过前端修改本地的储存进入别人的界面认证 修改别人的信息资料
+通过引入JWT 加强安全验证
+PS C:\Users\23584\Desktop\blog2\api> 
+    yarn add jsonwebtoken
+    yarn add cookie-parser
+
+const{} 和 const[] 涉及到了解构赋值
+
+为了显示数据日期 再在client 中引入yarn add moment
+
+为了可以保存文件 在api端引入 yarn add multer
